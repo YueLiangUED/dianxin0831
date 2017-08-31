@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />  
+    <meta name="apple-mobile-web-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" /> 
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset-app.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_02.css" />
+    <title>中国电信-乐翻天</title>
+    <script>
+        (function(global){
+            function remChange(){
+                document.documentElement.style.fontSize=100*document.documentElement.clientWidth/750+'px';
+            }
+            remChange();
+            global.addEventListener('resize',remChange,false);
+        })(window);
+        var viewScroll;
+        function loaded() {
+            viewScroll = new IScroll('.view-port', {
+                bounce: false,
+                mouseWheel: true,
+                click: true,
+                tap: true
+            });
+        }
+    </script>
+</head>
+<body onload="loaded()">
+    <!-- 页面html代码开始 -->
+    <div class="view-port pr">
+        <div class="wrapper-scroll pr">
+            <div class="qi-top"></div>
+            <div class="banner">
+                <img src="images/banner_03.png" alt="banner_03">
+            </div>
+            <div class="cards-box">
+                <div class="cards-top"></div>
+                <div class="cards-wrap">
+                    <div class="quan">
+                        <div class="quan-content"><span class="font-30">电信话费</span><span class="font-40"><i class="font-24">¥</i>10</span></div>
+                        <div class="quan-tip font-20">注：具体奖品详情请查看活动说明</div>
+                    </div>
+                    <div class="quan">
+                        <div class="quan-content"><span class="font-30">京东电子卡</span><span class="font-40"><i class="font-24">¥</i>100</span></div>
+                        <div class="quan-tip font-20">注：具体奖品详情请查看活动说明</div>
+                    </div>
+                    <div class="quan">
+                        <div class="quan-content"><span class="font-30">电信流量</span><span class="font-40">1G</span></div>
+                        <div class="quan-tip font-20">注：具体奖品详情请查看活动说明</div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box">
+                <a href="index.html"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 页面html代码结束 -->
+    <!-- <script type="text/javascript">setTimeout(function () {document.getElementsByTagName('body')[0].style.visibility='visible';},100)</script> -->
+    <script src="js/zepto.min.js"></script>
+    <script src="js/iscroll-min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

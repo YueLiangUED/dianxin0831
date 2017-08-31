@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />  
+    <meta name="apple-mobile-web-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" /> 
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset-app.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>中国电信-乐翻天</title>
+    <script>
+        (function(global){
+            function remChange(){
+                document.documentElement.style.fontSize=100*document.documentElement.clientWidth/750+'px';
+            }
+            remChange();
+            global.addEventListener('resize',remChange,false);
+
+            
+        })(window);
+        // 页面滚动
+        var viewScroll;
+        function loaded() {
+            viewScroll = new IScroll('.view-port', {
+                probeType: 3,
+                bounce: false,
+                mouseWheel: true,
+                click: true,
+                tap: true
+            }); 
+        }
+    </script>
+</head>
+<body onload="loaded()">
+    <!-- 页面html代码开始 -->
+    <div class="view-port pr">
+        <div class="wrapper-scroll pr">
+            <!-- banner -->
+            <div class="banner">
+                <img src="images/banner_01.png" alt="banner">
+            </div>
+            <!-- 抽奖盒子 -->
+            <div class="cards-box">
+                <div class="cards-top"></div>
+                <div class="cards-wrap flex">
+                    <div class="cards-item">
+                        <div class="cards">
+                            <img src="images/icon_04.png" alt="" />
+                        </div>
+                        <span class="cards-btn"></span>
+                    </div>
+                    <div class="cards-item">
+                        <div class="cards">
+                            <img src="images/icon_05.png" alt="" />
+                        </div>
+                        <span class="cards-btn"></span>
+                    </div>
+                    <div class="cards-item">
+                        <div class="cards">
+                            <img src="images/icon_06.png" alt="" />
+                        </div>
+                        <span class="cards-btn"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 活动说明 -->
+            <div class="active-explain">
+                <div class="explain-content">
+                    <h3>活动说明</h3>
+                    <div class="flex">
+                        <h4><span>活动时间:</span></h4>
+                        <p>2017年9月20日-9月25日</p>
+                    </div>
+                    <div>
+                        <h4><span>奖项设置：</span> </h4>
+                        <div class="flex jx">
+                            <div>
+                                一等奖：<span>100元京东电子卡</span><br>
+                                三等奖： <span>10元电信话费</span>  
+                            </div>
+                            <div>
+                                二等奖：<span>1G电信本地流量</span><br>
+                                参与奖：<span>50M本地流量</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4><span>活动规则:</span></h4>
+                        <p>
+                            每天默认一次翻牌机会，体验“中国电信天津客服”微信公众号中“轻松查”菜单内服务可额外获得一次，每天每位用户最多有两次机会；<br>
+                            每次可通过活动页面中的三张牌中，自行翻开一张牌，随机中奖；
+                        </p>
+                    </div>
+                    <div>
+                            <h4><span>说&nbsp;&nbsp;&nbsp;&nbsp;明:</span></h4>
+                            <p>
+                                1、活动奖励在中奖后五个工作日内充值到注册手机号中，可通过公众号点击菜单 “轻松查-更多服务-套餐余量”查询；<br>
+                                2、京东电子卡有限期为自激活日期起36个月，京东卡不记名、不挂失、不计息、不兑换、不可修改密码，请妥善保管账号及密码。<br>
+                                3、本地流量包奖品，赠送后当月未使用完可结转至下月，次月未使用完失效，主副卡不共享；<br>
+                                4、易通卡、易通9分卡、大三元等OCS套餐、流量时长型计费及不限量套餐的用户无法获得活动奖项中的流量奖项；<br>
+                                5、仅限天津电信用户参与，请保证号码状态正常在用。
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="prizes-btn pa"><a href="index_02.html"></a></div>
+        <!-- 滚动条 -->
+        <div class="tip-top">
+            <p>1822280821用户获得1G电信流量</p>
+        </div>
+    </div>
+    <div class="mask none"></div>
+    <div class="pop-over pop none animated">
+        <div class="pop-over-content">
+            <span class="btn"></span>
+        </div>
+    </div>
+    <div class="pop-hi pop none animated">
+        <div class="pop-content">
+            <div class="pop-header"></div>
+            <div class="pop-body">
+                <div class="pop-msg">
+                    <h4><img src="images/icon_08.png" alt="title" /></h4>
+                    <p>
+                        每月只需<span class="font-40">99</span>元<br />
+                        本地流量不限量+2GB漫游流量<br />
+                        +1000分钟国内通话
+                    </p>
+                </div>
+                <p class="c-p">恭喜您！<br />被限量嗨卡砸中了！</p>
+                <span class="btn">确定</span>
+            </div>
+
+        </div>
+    </div>
+    <!-- 页面html代码结束 -->
+    <script src="js/zepto.min.js"></script>
+    <script src="js/iscroll-min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
