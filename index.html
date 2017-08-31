@@ -21,21 +21,26 @@
             
         })(window);
         // 页面滚动
-        var viewScroll;
-        function loaded() {
-            viewScroll = new IScroll('.view-port', {
-                probeType: 3,
-                bounce: false,
-                mouseWheel: true,
-                click: true,
-                tap: true
-            }); 
-        }
+        // var viewScroll;
+        // function loaded() {
+        //     viewScroll = new IScroll('.view-port', {
+        //         probeType: 3,
+        //         bounce: false,
+        //         mouseWheel: true,
+        //         click: true,
+        //         tap: true
+        //     }); 
+        // }
     </script>
 </head>
-<body onload="loaded()">
+<body onload="">
+    <!-- 滚动条 -->
+        <div class="tip-top">
+            <p>1822280821用户获得1G电信流量</p>
+        </div>
     <!-- 页面html代码开始 -->
     <div class="view-port pr">
+
         <div class="wrapper-scroll pr">
             <!-- banner -->
             <div class="banner">
@@ -107,10 +112,7 @@
             </div>
         </div>
         <div class="prizes-btn pa"><a href="index_02.html"></a></div>
-        <!-- 滚动条 -->
-        <div class="tip-top">
-            <p>1822280821用户获得1G电信流量</p>
-        </div>
+
     </div>
     <div class="mask none"></div>
     <div class="pop-over pop none animated">
