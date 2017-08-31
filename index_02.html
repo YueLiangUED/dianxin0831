@@ -19,17 +19,9 @@
             global.addEventListener('resize',remChange,false);
         })(window);
         var viewScroll;
-        function loaded() {
-            viewScroll = new IScroll('.view-port', {
-                bounce: false,
-                mouseWheel: true,
-                click: true,
-                tap: true
-            });
-        }
     </script>
 </head>
-<body onload="loaded()">
+<body>
     <!-- 页面html代码开始 -->
     <div class="view-port pr">
         <div class="wrapper-scroll pr">
@@ -60,9 +52,6 @@
         </div>
     </div>
     <!-- 页面html代码结束 -->
-    <!-- <script type="text/javascript">setTimeout(function () {document.getElementsByTagName('body')[0].style.visibility='visible';},100)</script> -->
     <script src="js/zepto.min.js"></script>
-    <script src="js/iscroll-min.js"></script>
-    <script src="js/index.js"></script>
 </body>
 </html>

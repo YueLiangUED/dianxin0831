@@ -1,8 +1,9 @@
 @charset "utf-8";
 html,body {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+}
+body {
+    background-color: #e93227;
 }
 .flex {
     display: flex;
@@ -10,10 +11,11 @@ html,body {
 }
 .view-port {
     width: 100%;
-    height: 100%;
-    overflow-y: hidden;
     overflow-x: hidden;
-    background-color: #e93227;
+}
+.wrapper-scroll {
+    min-height: 100%;
+    padding-bottom: 0.46rem;
 }
 .qi-top {
     height: 1rem;
@@ -86,7 +88,6 @@ html,body {
 }
 .btn-box {
     margin-top: 0.45rem;
-    padding-bottom: 0.75rem;
 }
 .btn-box a {
     width: 6.11rem;

@@ -4,7 +4,7 @@ html,body {
     overflow-x: hidden;
 }
 body {
-    background-color: #000;
+    background-color: #e93227;
 }
 .flex {
     display: flex;
@@ -13,10 +13,8 @@ body {
 .view-port {
     width: 100%;
     overflow-x: hidden;
-    background-color: #e93227;
 }
 .wrapper-scroll {
-    min-height: 100%;
     padding-bottom: 0.46rem;
     background-image: url("../images/banner_02.png");
     background-repeat: no-repeat;
