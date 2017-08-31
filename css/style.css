@@ -183,24 +183,11 @@ html,body {
     right: 0;
     z-index: 95;
 }
-.pop-over-content {
-    position: relative;
-    width: 5.68rem;
-    height: 5.9rem;
-    margin: 2rem auto;
-    background-image: url("../images/pop_01.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100% 100%;
-}
-.pop-over-content .btn {
-    position: absolute;
-    left: 50%;
-    bottom: 0.6rem;
+.pop-over .pop-body .btn {
     display: block;
     width: 3.49rem;
     height: 0.78rem;
-    margin-left: -1.75rem;
+    margin: 0.4rem auto;
     background-image: url("../images/btn_04.png");
     background-repeat: no-repeat;
     background-position: center top;
@@ -234,6 +221,24 @@ html,body {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% auto;
+}
+.pop-over .pop-header {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    width: 2.75rem;
+    height: 2.03rem;
+    margin-left: -1.375rem;
+    background-image: url("../images/icon_09.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+}
+.pop-over .pop-body p {
+    color: #333;
+    font-size: 0.4rem;
+    line-height: 1.5em;
+    text-align: center;
 }
 .pop-msg {
     position: relative;
